@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" typr="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <div class="banner">
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ url_for('static', filename='network.mp4') }}" type="video/mp4">
+      </video>
+   
+    <div class="center" >
+        <h1> NETWORK TRAFFIC CLASSIFICATION</h1>
+    <form method="post" action="{{url_for('home')}}">
+       <b>DURATION :  <input type="number", name='duration', placeholder="enter"> <br><br><br>
+        TOTAL_FIAT :  <input type="number", name='total_fiat', placeholder="enter"> <br><br><br>
+        TOTAL_BIAT :  <input type="number", name='total_biat', placeholder="enter"> <br><br><br>
+        MIN_FIAT: <input type="number", name='min_fiat', placeholder="enter"> <br><br></b><br>
+        MIN_BIAT: <input type="number", name='min_biat', placeholder="enter"> <br><br></b><br>
+        MAX_FIAT: <input type="number", name='max_fiat', placeholder="enter"> <br><br></b><br>
+        MEAN_BIAT :  <input type="number", name='mean_biat', placeholder="enter"> <br><br></b><br>
+        FLOWPKTSPERSEC: <input type="number", name='flowPktsPerSecond', placeholder="enter"> <br><br></b><br>
+        FLOWBYTSPERSEC : <input type="number", name='flowBytesPerSecond', placeholder="enter"> <br><br></b><br>
+        MIN_FLOWAIT: <input type="number", name='min_flowiat', placeholder="enter"> <br><br></b><br>
+        MEAN_FLOWAIT: <input type="number", name='mean_flowiat', placeholder="enter"> <br><br></b><br>
+        STD_FLOWAIT: <input type="number", name='std_flowiat', placeholder="enter"> <br><br></b><br>
+        STD_ACTIVE : <input type="number", name='std_active', placeholder="enter"> <br><br></b><br>
+        <button class="button-85" role="button">SUBMIT!</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
